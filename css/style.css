@@ -193,17 +193,17 @@ img{
     fill: var(--title-text-color);
 }
 
-.site-nav-mail svg:hover,
-.site-nav-mail svg:focus {
+.icon-email:hover,
+.icon-email:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.site-nav-mail .contact-link:hover, 
-.site-nav-mail .contact-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
 /* section hero title */
 .hero-div{
     padding-left: 15px;
