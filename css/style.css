@@ -159,7 +159,8 @@ img{
 /* site-nav mail */
 
 .contact-link {
-    
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -187,21 +188,19 @@ img{
 
 }  */
 .icon-email{
-    Width: 16px;
-    Height: 12px;
+    
     margin-right: 10px;
     fill: var(--title-text-color);
 }
 
-.icon-email:hover,
-.icon-email:focus {
-    color: var(--accent-color);
+.contact-link:hover svg,
+.contact-link:focus svg {
     fill: var(--accent-color);
 }
+
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 /* section hero title */
