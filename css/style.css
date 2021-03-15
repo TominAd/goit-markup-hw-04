@@ -55,7 +55,9 @@ img{
 }
 
 .hero {
+    width: 1600px;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
@@ -260,12 +262,7 @@ img{
 .feature-list ul{
     display: flex;
     flex-wrap: wrap;
-    /* padding-left: 15px;
-    padding-right: 15px; */
-    /* margin: 0 auto;
-    width: 1200px;
-    justify-content: center;
-    align-items: center; */
+    
     
 }
 .feature-list .item {
@@ -273,46 +270,17 @@ img{
    
 }
 /* IMG icon SVG */
-.icon-antenna{
-    background-color: var(--backgroundcolor-team);
+.feature-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 102.34px;
-    padding-right: 102.34px;
+    background: #f5f4fa;
+    border-radius: 4px;
     margin-bottom: 30px;
 }
-.icon-clock{
-    background-color: var(--backgroundcolor-team);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 101.54px;
-    padding-right: 101.54px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px
-}
-.icon-diagram{
-    background-color: var(--backgroundcolor-team);
-    padding-top: 33.2px;
-    padding-bottom: 33.11px;
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px
-}
-.icon-astronaut {
-    background-color: var(--backgroundcolor-team);
-    padding-top: 30.23px;
-    padding-bottom: 29.11px;
-    padding-left: 100px;
-    padding-right: 115.17px;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px
-}
+
 /* ===========END========== */
 .feature-list .title{
     font-family: Roboto;
@@ -392,8 +360,8 @@ img{
     display: flex;
     align-items: center;
     margin-top: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .social-list-link{
     display: flex;
@@ -475,122 +443,48 @@ img{
 } 
 /* castomers sections */
 .regular-customers{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
-.customers-div{
+/* .customers-div{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
+} */
 .customers-ul{
     display: flex;
-    flex-wrap: wrap;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 .customers-ul .item:not(:last-child) {
     margin-right: 30px;
 }
-/* .customers-svg{
-    /* border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px; */
-    /* width: 170px;
-    height: 90px; */
-
+.customers-item{
+    width: 170px;
+    height: 90px;
+}
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
 /* logo customers SVG */
-.logo-1{
+.customers-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 20px;
-    padding-bottom: 20.77px;
-    padding-left: 63px;
-    padding-right: 62.73px;
-}
-.logo-2 {
-    fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 19px;
-    padding-bottom: 19px;
-    padding-left: 65px;
-    padding-right: 65px;
-}
-.logo-3 {
-    fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 24px;
-    padding-bottom: 23.4px;
-    padding-left: 65px;
-    padding-right: 64px;
-}
-.logo-4 {
-    fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 24px;
-    padding-bottom: 23.93px;
-    padding-left: 45px;
-    padding-right: 46.34px;
-}
-.logo-5 {
-    fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 22px;
-    padding-bottom: 21px;
-    padding-left: 56px;
-    padding-right: 55px;
-}
-.logo-6 {
-    fill: var(--color-svg);
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 90px;
-    padding-top: 22px;
-    padding-bottom: 22.56px;
-    padding-left: 41px;
-    padding-right: 40.52px;
-}
-.logo-1:hover,
-.logo-1:focus {
+    border: solid 1px var(--color-svg);
+    }
+
+.customers-svg:hover,
+.customers-svg:focus {
     fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-.logo-2:hover,
-.logo-2:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-.logo-3:hover,
-.logo-3:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-.logo-4:hover,
-.logo-4:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-.logo-5:hover,
-.logo-5:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-}
-.logo-6:hover,
-.logo-6:focus {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
+    border: solid 1px var(--accent-color);
 }
     /*container footer */
 .footer{
@@ -607,6 +501,7 @@ img{
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    align-items: baseline;
 }
 /* .footer-link-div{
     width: 1200px;
@@ -615,7 +510,7 @@ img{
     margin: 0 auto;
 } */
 .footer-social-div{
-    margin-left: 70px;
+    padding-left: 70px;
     padding-top: 12px;
 }
 .footer-social-list-icon {
@@ -773,8 +668,11 @@ img{
 .button-portfolio:focus {
    color: var(--white-color);
    background-color: var(--accent-color);
-   }
-
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
 .portfolio-ul{
     
     display: flex;
